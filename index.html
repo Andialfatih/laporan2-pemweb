@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Teori Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="container">
+        <button id="modeToggleBtn" class="modeToggleBtn" onclick="toggleMode()">Ubah Mode Tampilan</button>
+        <h1 class="main-title">Laporan Teori Web</h1>
+        <p class="author">Andi Alfatih Raihan Palurui | 202331033</p>
+
+        <!-- Seksi Pertama -->
+        <div class="section">
+            <h2 class="section-title" onclick="toggleContent('content1')">1. Mengapa Menggunakan HTML, CSS, dan JavaScript?</h2>
+            <div id="content1" class="content hidden">
+                <h3 onclick="toggleSubContent('htmlContent')">1. HTML (HyperText Markup Language)</h3>
+                <div id="htmlContent" class="subcontent hidden">
+                    <p>HTML adalah bahasa markup untuk membuat struktur halaman web. Elemen-elemen HTML seperti teks, gambar, dan tautan adalah kerangka utama halaman web.</p>
+                </div>
+
+                <h3 onclick="toggleSubContent('cssContent')">2. CSS (Cascading Style Sheets)</h3>
+                <div id="cssContent" class="subcontent hidden">
+                    <p>CSS digunakan untuk mempercantik tampilan web, mengatur warna, font, tata letak, dan elemen visual lainnya agar halaman lebih menarik.</p>
+                </div>
+
+                <h3 onclick="toggleSubContent('jsContent')">3. JavaScript</h3>
+                <div id="jsContent" class="subcontent hidden">
+                    <p>JavaScript menambahkan interaktivitas dan logika pada halaman web, seperti animasi, validasi formulir, dan memperbarui konten tanpa memuat ulang halaman.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seksi Kedua -->
+        <div class="section">
+            <h2 class="section-title" onclick="toggleContent('content2')">2. Bagaimana HTML, CSS, dan JavaScript Diintegrasikan?</h2>
+            <div id="content2" class="content hidden">
+                <h3 onclick="toggleSubContent('htmlIntegration')">1. HTML: Struktur Halaman</h3>
+                <div id="htmlIntegration" class="subcontent hidden">
+                    <p>HTML digunakan untuk mendefinisikan elemen-elemen seperti paragraf, gambar, tombol, dan lainnya. Semua komponen dasar halaman dibuat dengan HTML.</p>
+                </div>
+
+                <h3 onclick="toggleSubContent('cssIntegration')">2. CSS: Gaya dan Tata Letak</h3>
+                <div id="cssIntegration" class="subcontent hidden">
+                    <p>CSS dihubungkan dengan HTML untuk memberikan gaya pada elemen-elemen seperti warna, margin, atau posisi. Hal ini dilakukan dengan file eksternal, internal, atau inline.</p>
+                </div>
+
+                <h3 onclick="toggleSubContent('jsIntegration')">3. JavaScript: Interaktivitas</h3>
+                <div id="jsIntegration" class="subcontent hidden">
+                    <p>JavaScript digunakan untuk memberikan logika dan interaktivitas, seperti memperbarui teks atau menambahkan animasi ke halaman web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
